@@ -1,0 +1,18 @@
+- name: Backup routes on servers
+  hosts: ip_route_hosts
+  gather_facts: yes
+  vars:
+    backup_dir: /root/routes_backup2/
+  tasks:
+  - name: Backup routes
+    shell: /sbin/ip route > /tmp/{{ inventory_hostname }}_routes_{{ ansible_date_time.date }}.txt
+    register: routes_output
+  - name: Copy routes to Ubuntu server
+    fetch:
+      src: "/tmp/{{ inventory_hostname }}_routes_{{ ansible_date_time.date }}.txt"
+      dest: "{{ backup_dir }}"
+      flat: yes
+  - name: Remove routes file
+    file:
+      path: /tmp/{{ inventory_hostname }}_routes_{{ ansible_date_time.date }}.txt
+      state: absent

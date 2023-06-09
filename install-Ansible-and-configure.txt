@@ -1,0 +1,83 @@
+# what is ansible 
+
+
+
+
+
+
+
+
+# To install ansible
+
+--> apt install ansible
+
+# check ansible version
+
+---> ansible --version
+
+
+check if any depends is there delete ansible and install all packages
+
+# To uninstall anisble
+
+--> sudo apt purge ansible ansible-core 
+
+
+##check software properties
+
+--> apt install software-properties-common
+
+# Add repository
+
+--> add-apt-repository ppa:ansible/ansible  --yes --update
+
+#install  anisble now
+
+--> apt install ansible-core
+
+#####ssh connection#########
+
+-->ssh-keygen 
+hit enter to accetpt default
+
+--> ls ~/.ssh
+
+to see the location
+
+-->ssh-copy-id root@172.23.26.200 
+
+(ssh-copy-id root@(ip remote node)
+
+
+configure file path
+
+--> vi /etc/ansible/hosts
+
+below create host group in that file 
+
+[servers]
+
+IP (ansible server)
+IP (which need to add in that server)
+
+##test it is successfully added or not
+
+--> ansible -m ping servers
+
+s (host group name)
+
+to see all host files
+ ###ansible-inventory --graph
+
+ansible-doc -i    ---> to see all modules in server
+
+ansible-playbook ping.yml [ -e ] use to change in config file 
+
+ansible all --list-hosts  ---> to see all hosts
+ ansible servers  --list-hosts  ---> to see in groups what are all the hosts
+
+
+
+
+"msg": "value of state must be one of: absent, installed, latest, present, removed,
+ 

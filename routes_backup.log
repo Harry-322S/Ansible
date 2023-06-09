@@ -1,0 +1,2041 @@
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+PLAY [Backup routes on servers] ************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.100.102.20]
+ok: [10.100.102.58]
+ok: [10.100.102.213]
+ok: [10.100.102.214]
+ok: [10.100.102.177]
+ok: [10.100.102.211]
+ok: [10.100.102.53]
+ok: [10.100.102.175]
+ok: [10.100.104.141]
+[WARNING]: Platform linux on host 10.100.109.204 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.109.204]
+ok: [10.100.104.130]
+fatal: [10.100.104.124]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.124 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.145]
+ok: [10.100.104.138]
+ok: [10.100.104.161]
+ok: [10.100.102.176]
+fatal: [10.100.102.151]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.102.151 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.165]
+ok: [10.100.104.142]
+fatal: [10.100.102.150]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.102.150 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.177]
+ok: [10.100.104.174]
+ok: [10.100.104.160]
+ok: [10.100.104.182]
+ok: [10.100.104.183]
+ok: [10.100.104.184]
+ok: [10.100.104.189]
+fatal: [10.100.104.43]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.104.43 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.104.187]
+ok: [10.100.104.179]
+ok: [10.100.104.82]
+ok: [10.100.104.91]
+fatal: [10.100.104.75]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.75 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.92]
+ok: [10.100.104.144]
+ok: [10.100.104.150]
+ok: [10.100.104.140]
+ok: [10.100.104.72]
+fatal: [10.100.111.43]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.111.43 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.104.166]
+ok: [10.100.111.55]
+ok: [10.100.111.56]
+ok: [10.100.111.73]
+ok: [10.100.104.180]
+fatal: [10.100.111.94]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.111.94 port 22: Connection refused", "unreachable": true}
+ok: [10.100.111.79]
+ok: [10.100.111.131]
+ok: [10.100.111.154]
+fatal: [10.100.111.142]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.111.142 port 22: No route to host", "unreachable": true}
+ok: [10.100.104.99]
+ok: [10.100.111.175]
+fatal: [10.100.111.190]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901675.8041663-119318186561238 `\" && echo ansible-tmp-1685901675.8041663-119318186561238=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901675.8041663-119318186561238 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.111.197]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901676.7876756-185771718702875 `\" && echo ansible-tmp-1685901676.7876756-185771718702875=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901676.7876756-185771718702875 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.111.177]
+fatal: [10.100.112.6]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.6 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1", "unreachable": true}
+fatal: [10.100.112.11]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.11 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+fatal: [10.100.112.7]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.7 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1", "unreachable": true}
+ok: [10.100.112.37]
+ok: [10.100.112.54]
+ok: [10.100.112.45]
+ok: [10.100.111.168]
+ok: [10.100.104.34]
+ok: [10.100.112.88]
+ok: [10.100.111.198]
+ok: [10.100.112.72]
+ok: [10.100.112.106]
+fatal: [10.100.112.132]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.132 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.112.120]
+ok: [10.100.112.127]
+ok: [10.100.112.139]
+ok: [10.100.112.136]
+ok: [10.100.112.137]
+fatal: [10.100.112.134]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901688.9287634-87022518509166 `\" && echo ansible-tmp-1685901688.9287634-87022518509166=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901688.9287634-87022518509166 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.160]
+ok: [10.100.112.161]
+fatal: [10.100.112.167]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901689.7685862-192660275397041 `\" && echo ansible-tmp-1685901689.7685862-192660275397041=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901689.7685862-192660275397041 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.179]
+fatal: [10.100.112.69]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.69 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.182]
+ok: [10.100.112.187]
+ok: [10.100.112.186]
+ok: [10.100.112.198]
+ok: [10.100.112.184]
+ok: [10.100.112.225]
+ok: [10.100.112.205]
+ok: [10.100.112.240]
+ok: [10.100.113.28]
+ok: [10.100.113.39]
+[WARNING]: Distribution centos 7.6.1810 on host 10.100.113.27 should use
+/usr/bin/python, but is using /usr/bin/python3.6, since the discovered platform
+python interpreter was not present. See https://docs.ansible.com/ansible/2.9/re
+ference_appendices/interpreter_discovery.html for more information.
+ok: [10.100.113.27]
+ok: [10.100.113.66]
+fatal: [10.100.112.177]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.177 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.113.118]
+ok: [10.100.113.162]
+ok: [10.100.112.183]
+ok: [10.100.113.169]
+ok: [10.100.116.24]
+ok: [10.100.116.29]
+ok: [10.100.116.77]
+ok: [10.100.104.126]
+ok: [10.100.116.41]
+ok: [10.100.104.23]
+ok: [10.100.113.145]
+ok: [10.100.111.77]
+fatal: [10.100.104.131]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.131 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.132]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.132 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.25]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.25 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.26]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.26 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.35]
+fatal: [10.100.104.28]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.28 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.29]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.29 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.31]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.31 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.32]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.32 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.48]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.48 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.50]
+fatal: [10.100.104.49]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.49 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.67]
+ok: [10.100.104.76]
+ok: [10.100.104.42]
+fatal: [10.100.104.68]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.68 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.69]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.69 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.35]
+ok: [10.100.112.43]
+ok: [10.100.112.49]
+fatal: [10.100.104.70]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.70 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.57]
+fatal: [10.100.104.71]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.71 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.58]
+ok: [10.100.112.76]
+fatal: [10.100.112.48]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.48 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.113.198]
+ok: [10.100.116.35]
+fatal: [10.100.112.67]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.67 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.116.37]
+fatal: [10.100.112.129]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901750.877551-92831179574874 `\" && echo ansible-tmp-1685901750.877551-92831179574874=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901750.877551-92831179574874 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.215]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.215 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.30]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.30 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.61]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901751.843738-1311073095025 `\" && echo ansible-tmp-1685901751.843738-1311073095025=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901751.843738-1311073095025 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.130]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901751.6677096-61654439676973 `\" && echo ansible-tmp-1685901751.6677096-61654439676973=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901751.6677096-61654439676973 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.33]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.33 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.63]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.291399-140231511508987 `\" && echo ansible-tmp-1685901752.291399-140231511508987=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.291399-140231511508987 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.73]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.627601-197624556420235 `\" && echo ansible-tmp-1685901752.627601-197624556420235=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.627601-197624556420235 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.85]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.8077192-254275079213496 `\" && echo ansible-tmp-1685901752.8077192-254275079213496=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.8077192-254275079213496 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.90]
+fatal: [10.100.104.89]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.104.81]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.756616-206505884464805 `\" && echo ansible-tmp-1685901752.756616-206505884464805=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901752.756616-206505884464805 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.205]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.7178388-260476585658455 `\" && echo ansible-tmp-1685901755.7178388-260476585658455=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.7178388-260476585658455 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.139]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.6792295-85491400264560 `\" && echo ansible-tmp-1685901755.6792295-85491400264560=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.6792295-85491400264560 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.206]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.7739289-58906433553580 `\" && echo ansible-tmp-1685901755.7739289-58906433553580=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901755.7739289-58906433553580 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.87]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901753.0860894-1531302326416 `\" && echo ansible-tmp-1685901753.0860894-1531302326416=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901753.0860894-1531302326416 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.98]
+fatal: [10.100.112.31]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901757.1980894-216549411427818 `\" && echo ansible-tmp-1685901757.1980894-216549411427818=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901757.1980894-216549411427818 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.109.221]
+ok: [10.100.112.109]
+fatal: [10.100.112.126]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901758.6548753-239581383897419 `\" && echo ansible-tmp-1685901758.6548753-239581383897419=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901758.6548753-239581383897419 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.111.162]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901759.0230834-110346927937020 `\" && echo ansible-tmp-1685901759.0230834-110346927937020=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901759.0230834-110346927937020 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.210]
+fatal: [10.100.112.29]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901759.0547445-265254109472033 `\" && echo ansible-tmp-1685901759.0547445-265254109472033=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901759.0547445-265254109472033 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.172]
+ok: [10.100.104.207]
+fatal: [10.100.112.112]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901760.3336697-113973544254124 `\" && echo ansible-tmp-1685901760.3336697-113973544254124=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901760.3336697-113973544254124 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.137]
+ok: [10.100.104.136]
+fatal: [10.100.112.159]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.233]
+ok: [10.100.109.61]
+fatal: [10.100.116.11]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.116.17]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.112.214]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.214 port 22: Connection refused", "unreachable": true}
+ok: [10.100.112.93]
+ok: [10.100.109.29]
+ok: [10.100.104.65]
+fatal: [10.100.116.13]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.232]
+ok: [10.100.109.62]
+fatal: [10.100.116.12]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.109.63]
+ok: [10.100.104.157]
+ok: [10.100.104.125]
+fatal: [10.100.112.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.213 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.115]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.115 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.116]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.116 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.77]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.77 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.114]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.114 port 22: Connection refused", "unreachable": true}
+ok: [10.100.104.40]
+ok: [10.100.104.118]
+fatal: [10.100.112.27]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.27 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.79]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.79 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.112]
+ok: [10.100.104.153]
+ok: [10.100.109.113]
+ok: [10.100.112.218]
+ok: [10.100.109.114]
+fatal: [10.100.112.26]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.26 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.109.67]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: ", "unreachable": true}
+fatal: [10.100.112.210]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.210 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.211]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Connection timed out during banner exchange", "unreachable": true}
+fatal: [10.100.112.249]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.249 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.250]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.250 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.78]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.78 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.12]
+fatal: [10.100.112.25]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.25 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.111]
+fatal: [10.100.109.66]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: W A R N I N G W A R N I N G W A R N I N G W A R N I N G \nThis is a private computer system. Unauthorized access or use \nis prohibited and subject to prosecution and/or disciplinary \naction. All use of this system constitutes consent to \nmonitoring at all times and users are not entitled to any \nexpectation of privacy. If monitoring reveals possible evidence\nof violation of criminal statutes, this evidence and any other \nrelated information, including identification information about \nthe user, may be provided to law enforcement officials.\nIf monitoring reveals violations of security regulations or\nunauthorized use, employees who violate security regulations or\nmake unauthorized use of this system are subject to appropriate \ndisciplinary action.\nW A R N I N G W A R N I N G W A R N I N G W A R N I N G", "unreachable": true}
+fatal: [10.100.112.117]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.117 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.112.191]
+ok: [10.100.109.100]
+ok: [10.100.112.140]
+ok: [10.100.109.16]
+ok: [10.100.112.199]
+fatal: [10.100.112.118]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.118 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.104.113]
+ok: [10.100.102.72]
+fatal: [10.100.112.119]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.119 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.112.152]
+ok: [10.100.109.130]
+ok: [10.100.112.50]
+ok: [10.100.113.34]
+ok: [10.100.112.178]
+ok: [10.100.113.167]
+ok: [10.100.109.127]
+ok: [10.100.113.18]
+ok: [10.100.112.74]
+ok: [10.100.112.181]
+ok: [10.100.112.217]
+fatal: [10.100.112.84]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Authorized uses only. All activity may be monitored and reported.\nPermission denied, please try again.", "unreachable": true}
+ok: [10.100.104.110]
+fatal: [10.100.109.72]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.109.73]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.102.60]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.122]
+ok: [10.100.112.157]
+fatal: [10.100.104.208]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.208 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.92]
+fatal: [10.100.104.133]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901823.9307616-280181527502733 `\" && echo ansible-tmp-1685901823.9307616-280181527502733=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901823.9307616-280181527502733 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.128]
+fatal: [10.100.104.209]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.209 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.242]
+ok: [10.100.109.31]
+ok: [10.100.112.22]
+ok: [10.100.112.244]
+ok: [10.100.104.204]
+ok: [10.100.112.55]
+ok: [10.100.116.183]
+ok: [10.100.102.19]
+fatal: [10.100.109.57]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685901844.6516445-198010852509851 `\" && echo ansible-tmp-1685901844.6516445-198010852509851=\"` echo ~/.ansible/tmp/ansible-tmp-1685901844.6516445-198010852509851 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.159]
+fatal: [10.100.104.79]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: ", "unreachable": true}
+ok: [10.100.104.152]
+fatal: [10.100.109.65]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.64]
+ok: [10.100.111.106]
+ok: [10.100.112.73]
+ok: [10.100.112.36]
+ok: [10.100.112.71]
+fatal: [10.100.104.154]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: kex_exchange_identification: read: Connection reset by peer", "unreachable": true}
+ok: [10.100.104.62]
+ok: [10.100.112.156]
+ok: [10.100.104.47]
+ok: [10.100.104.46]
+fatal: [10.100.112.229]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.129]
+ok: [10.100.104.199]
+fatal: [10.100.112.230]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901857.755497-239726345134146 `\" && echo ansible-tmp-1685901857.755497-239726345134146=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901857.755497-239726345134146 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.138]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901858.8500679-163220946418961 `\" && echo ansible-tmp-1685901858.8500679-163220946418961=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901858.8500679-163220946418961 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.109.178]
+ok: [10.100.116.45]
+ok: [10.100.112.151]
+ok: [10.100.104.151]
+ok: [10.100.112.40]
+ok: [10.100.104.74]
+fatal: [10.100.112.104]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/dchyd/.ansible’: No space left on device\n", "unreachable": true}
+fatal: [10.10.112.128]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.10.112.128 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.52]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.112.81]
+ok: [10.100.112.133]
+ok: [10.100.112.180]
+fatal: [10.100.111.171]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901875.8789423-18047723331650 `\" && echo ansible-tmp-1685901875.8789423-18047723331650=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901875.8789423-18047723331650 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.147]
+fatal: [10.100.112.53]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901877.4913418-215561935238850 `\" && echo ansible-tmp-1685901877.4913418-215561935238850=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685901877.4913418-215561935238850 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.99]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685901878.6184142-48293786808630 `\" && echo ansible-tmp-1685901878.6184142-48293786808630=\"` echo ~/.ansible/tmp/ansible-tmp-1685901878.6184142-48293786808630 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.134]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685901878.8256307-69986287829740 `\" && echo ansible-tmp-1685901878.8256307-69986287829740=\"` echo ~/.ansible/tmp/ansible-tmp-1685901878.8256307-69986287829740 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.149]
+ok: [10.100.102.95]
+ok: [10.100.104.80]
+fatal: [10.100.109.37]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.109.37 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.111.219]
+fatal: [10.100.109.36]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.109.36 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.195]
+ok: [10.100.112.236]
+ok: [10.100.112.231]
+ok: [10.100.112.61]
+ok: [10.100.109.116]
+ok: [10.100.109.139]
+ok: [10.100.111.30]
+ok: [10.100.104.188]
+
+TASK [Backup routes] ***********************************************************
+changed: [10.100.102.58]
+changed: [10.100.102.213]
+changed: [10.100.102.20]
+changed: [10.100.102.214]
+fatal: [10.100.109.204]: FAILED! => {"changed": true, "cmd": "/sbin/route -n > /tmp/10.100.109.204_routes_2023-06-04.txt", "delta": "0:00:00.004685", "end": "2023-06-04 23:35:21.283887", "msg": "non-zero return code", "rc": 127, "start": "2023-06-04 23:35:21.279202", "stderr": "/bin/sh: /sbin/route: No such file or directory", "stderr_lines": ["/bin/sh: /sbin/route: No such file or directory"], "stdout": "", "stdout_lines": []}
+changed: [10.100.102.175]
+changed: [10.100.102.53]
+changed: [10.100.102.177]
+changed: [10.100.102.211]
+changed: [10.100.104.141]
+changed: [10.100.104.145]
+changed: [10.100.104.138]
+changed: [10.100.104.161]
+changed: [10.100.104.165]
+changed: [10.100.104.130]
+changed: [10.100.104.174]
+changed: [10.100.104.177]
+changed: [10.100.102.176]
+changed: [10.100.104.142]
+changed: [10.100.104.182]
+changed: [10.100.104.183]
+changed: [10.100.104.184]
+changed: [10.100.104.160]
+changed: [10.100.104.187]
+changed: [10.100.104.189]
+changed: [10.100.104.34]
+changed: [10.100.104.82]
+changed: [10.100.104.91]
+changed: [10.100.104.92]
+changed: [10.100.104.179]
+changed: [10.100.104.144]
+changed: [10.100.104.150]
+changed: [10.100.104.140]
+changed: [10.100.111.55]
+changed: [10.100.104.166]
+changed: [10.100.111.56]
+changed: [10.100.111.73]
+changed: [10.100.111.77]
+fatal: [10.100.111.79]: FAILED! => {"changed": true, "cmd": "/sbin/route -n > /tmp/10.100.111.79_routes_2023-06-04.txt", "delta": "0:00:00.002494", "end": "2023-06-04 23:35:51.834558", "msg": "non-zero return code", "rc": 127, "start": "2023-06-04 23:35:51.832064", "stderr": "/bin/sh: 1: /sbin/route: not found", "stderr_lines": ["/bin/sh: 1: /sbin/route: not found"], "stdout": "", "stdout_lines": []}
+changed: [10.100.111.131]
+changed: [10.100.111.154]
+changed: [10.100.111.168]
+changed: [10.100.111.175]
+changed: [10.100.104.180]
+changed: [10.100.111.177]
+changed: [10.100.112.37]
+changed: [10.100.112.54]
+changed: [10.100.112.45]
+changed: [10.100.112.88]
+changed: [10.100.112.72]
+changed: [10.100.112.106]
+changed: [10.100.112.120]
+changed: [10.100.112.127]
+changed: [10.100.111.198]
+changed: [10.100.112.139]
+changed: [10.100.112.160]
+changed: [10.100.112.137]
+changed: [10.100.112.136]
+changed: [10.100.112.182]
+changed: [10.100.112.161]
+changed: [10.100.112.179]
+changed: [10.100.112.187]
+changed: [10.100.112.184]
+changed: [10.100.112.186]
+changed: [10.100.112.198]
+changed: [10.100.112.205]
+changed: [10.100.112.225]
+changed: [10.100.112.240]
+changed: [10.100.113.28]
+changed: [10.100.113.27]
+changed: [10.100.113.39]
+changed: [10.100.113.66]
+changed: [10.100.113.118]
+changed: [10.100.113.162]
+changed: [10.100.113.169]
+changed: [10.100.116.24]
+changed: [10.100.104.72]
+changed: [10.100.116.29]
+changed: [10.100.116.41]
+changed: [10.100.113.145]
+changed: [10.100.116.77]
+changed: [10.100.104.23]
+changed: [10.100.104.126]
+changed: [10.100.104.35]
+changed: [10.100.104.50]
+changed: [10.100.104.99]
+changed: [10.100.104.76]
+changed: [10.100.104.67]
+changed: [10.100.112.183]
+changed: [10.100.104.42]
+changed: [10.100.112.35]
+changed: [10.100.112.43]
+changed: [10.100.112.49]
+changed: [10.100.112.76]
+changed: [10.100.116.35]
+changed: [10.100.113.198]
+changed: [10.100.112.57]
+changed: [10.100.112.58]
+changed: [10.100.116.37]
+changed: [10.100.104.90]
+changed: [10.100.104.98]
+changed: [10.100.112.109]
+changed: [10.100.109.221]
+changed: [10.100.104.40]
+changed: [10.100.104.172]
+changed: [10.100.104.137]
+changed: [10.100.104.207]
+changed: [10.100.104.136]
+changed: [10.100.104.210]
+changed: [10.100.104.233]
+changed: [10.100.109.61]
+changed: [10.100.112.93]
+changed: [10.100.109.29]
+changed: [10.100.104.232]
+changed: [10.100.104.65]
+changed: [10.100.109.62]
+changed: [10.100.109.63]
+changed: [10.100.104.125]
+changed: [10.100.104.157]
+changed: [10.100.109.112]
+changed: [10.100.109.113]
+changed: [10.100.112.218]
+changed: [10.100.109.114]
+changed: [10.100.109.111]
+changed: [10.100.109.12]
+changed: [10.100.109.100]
+changed: [10.100.112.191]
+changed: [10.100.112.140]
+changed: [10.100.109.16]
+changed: [10.100.112.199]
+changed: [10.100.104.113]
+changed: [10.100.102.72]
+changed: [10.100.112.178]
+changed: [10.100.112.50]
+changed: [10.100.112.152]
+changed: [10.100.109.130]
+changed: [10.100.113.167]
+changed: [10.100.112.74]
+changed: [10.100.113.34]
+changed: [10.100.109.127]
+changed: [10.100.102.19]
+changed: [10.100.113.18]
+changed: [10.100.112.181]
+changed: [10.100.112.217]
+changed: [10.100.104.110]
+changed: [10.100.104.122]
+changed: [10.100.112.157]
+changed: [10.100.112.92]
+changed: [10.100.104.128]
+changed: [10.100.112.242]
+changed: [10.100.112.244]
+changed: [10.100.104.118]
+changed: [10.100.109.31]
+changed: [10.100.112.22]
+changed: [10.100.104.153]
+changed: [10.100.112.55]
+changed: [10.100.116.183]
+fatal: [10.100.104.159]: FAILED! => {"changed": true, "cmd": "/sbin/route -n > /tmp/10.100.104.159_routes_2023-06-04.txt", "delta": "0:00:00.008229", "end": "2023-06-04 23:36:34.109342", "msg": "non-zero return code", "rc": 127, "start": "2023-06-04 23:36:34.101113", "stderr": "/bin/sh: 1: /sbin/route: not found", "stderr_lines": ["/bin/sh: 1: /sbin/route: not found"], "stdout": "", "stdout_lines": []}
+changed: [10.100.104.152]
+changed: [10.100.104.64]
+changed: [10.100.112.73]
+changed: [10.100.112.36]
+changed: [10.100.112.71]
+changed: [10.100.112.156]
+changed: [10.100.104.62]
+changed: [10.100.104.47]
+changed: [10.100.104.46]
+changed: [10.100.104.199]
+changed: [10.100.104.204]
+changed: [10.100.111.106]
+changed: [10.100.109.178]
+changed: [10.100.116.45]
+changed: [10.100.112.151]
+changed: [10.100.112.133]
+changed: [10.100.104.151]
+changed: [10.100.104.74]
+changed: [10.100.112.81]
+changed: [10.100.112.180]
+changed: [10.100.104.129]
+changed: [10.100.102.95]
+changed: [10.100.112.149]
+changed: [10.100.112.147]
+changed: [10.100.104.80]
+changed: [10.100.111.219]
+changed: [10.100.112.195]
+changed: [10.100.112.236]
+changed: [10.100.109.139]
+changed: [10.100.112.61]
+changed: [10.100.109.116]
+changed: [10.100.112.231]
+changed: [10.100.112.40]
+changed: [10.100.104.188]
+changed: [10.100.111.30]
+
+TASK [Copy routes to Ubuntu server] ********************************************
+changed: [10.100.102.214]
+changed: [10.100.102.213]
+changed: [10.100.102.53]
+changed: [10.100.102.58]
+changed: [10.100.102.20]
+changed: [10.100.102.211]
+changed: [10.100.102.177]
+changed: [10.100.102.175]
+changed: [10.100.104.141]
+changed: [10.100.104.138]
+changed: [10.100.104.145]
+changed: [10.100.104.161]
+changed: [10.100.104.165]
+changed: [10.100.104.130]
+changed: [10.100.104.174]
+changed: [10.100.104.177]
+changed: [10.100.102.176]
+changed: [10.100.104.142]
+changed: [10.100.104.182]
+changed: [10.100.104.183]
+changed: [10.100.104.160]
+changed: [10.100.104.184]
+changed: [10.100.104.187]
+changed: [10.100.104.189]
+changed: [10.100.104.34]
+changed: [10.100.104.82]
+changed: [10.100.104.91]
+changed: [10.100.104.179]
+changed: [10.100.104.92]
+changed: [10.100.104.144]
+changed: [10.100.104.150]
+changed: [10.100.104.140]
+changed: [10.100.111.55]
+changed: [10.100.104.166]
+changed: [10.100.111.73]
+changed: [10.100.111.56]
+changed: [10.100.111.131]
+changed: [10.100.111.77]
+changed: [10.100.111.154]
+changed: [10.100.111.168]
+changed: [10.100.104.180]
+changed: [10.100.111.175]
+changed: [10.100.111.177]
+changed: [10.100.112.37]
+changed: [10.100.112.54]
+changed: [10.100.112.45]
+changed: [10.100.112.88]
+changed: [10.100.112.72]
+changed: [10.100.112.106]
+changed: [10.100.112.120]
+changed: [10.100.112.127]
+changed: [10.100.111.198]
+changed: [10.100.112.139]
+changed: [10.100.112.160]
+changed: [10.100.112.136]
+changed: [10.100.112.137]
+changed: [10.100.112.182]
+changed: [10.100.112.179]
+changed: [10.100.112.161]
+changed: [10.100.112.187]
+changed: [10.100.112.184]
+changed: [10.100.112.186]
+changed: [10.100.112.198]
+changed: [10.100.112.205]
+changed: [10.100.112.225]
+changed: [10.100.112.240]
+changed: [10.100.113.28]
+changed: [10.100.113.27]
+changed: [10.100.113.39]
+changed: [10.100.113.66]
+changed: [10.100.113.118]
+changed: [10.100.113.162]
+changed: [10.100.113.169]
+changed: [10.100.104.72]
+changed: [10.100.116.24]
+changed: [10.100.116.29]
+changed: [10.100.116.41]
+changed: [10.100.113.145]
+changed: [10.100.116.77]
+changed: [10.100.104.126]
+changed: [10.100.104.23]
+changed: [10.100.104.35]
+changed: [10.100.104.99]
+changed: [10.100.104.50]
+changed: [10.100.112.183]
+changed: [10.100.104.76]
+changed: [10.100.104.67]
+changed: [10.100.104.42]
+changed: [10.100.112.35]
+changed: [10.100.112.43]
+changed: [10.100.112.49]
+changed: [10.100.112.76]
+changed: [10.100.116.35]
+changed: [10.100.113.198]
+changed: [10.100.112.57]
+changed: [10.100.112.58]
+changed: [10.100.116.37]
+changed: [10.100.104.90]
+changed: [10.100.104.98]
+changed: [10.100.109.221]
+changed: [10.100.112.109]
+changed: [10.100.104.40]
+changed: [10.100.104.210]
+changed: [10.100.104.172]
+changed: [10.100.104.207]
+changed: [10.100.104.137]
+changed: [10.100.104.136]
+changed: [10.100.104.233]
+changed: [10.100.112.93]
+changed: [10.100.109.61]
+changed: [10.100.109.29]
+changed: [10.100.104.232]
+changed: [10.100.104.65]
+changed: [10.100.109.62]
+changed: [10.100.109.63]
+changed: [10.100.104.125]
+changed: [10.100.109.112]
+changed: [10.100.104.157]
+changed: [10.100.109.113]
+changed: [10.100.112.218]
+changed: [10.100.109.114]
+changed: [10.100.109.111]
+changed: [10.100.109.12]
+changed: [10.100.109.100]
+changed: [10.100.112.191]
+changed: [10.100.112.140]
+changed: [10.100.112.199]
+changed: [10.100.109.16]
+changed: [10.100.104.113]
+changed: [10.100.102.72]
+changed: [10.100.112.178]
+changed: [10.100.112.50]
+changed: [10.100.112.152]
+changed: [10.100.109.130]
+changed: [10.100.113.167]
+changed: [10.100.113.34]
+changed: [10.100.112.74]
+changed: [10.100.109.127]
+changed: [10.100.102.19]
+changed: [10.100.113.18]
+changed: [10.100.112.217]
+changed: [10.100.104.110]
+changed: [10.100.112.181]
+changed: [10.100.104.122]
+changed: [10.100.112.157]
+changed: [10.100.112.92]
+changed: [10.100.104.128]
+changed: [10.100.112.242]
+changed: [10.100.112.244]
+changed: [10.100.104.118]
+changed: [10.100.112.22]
+changed: [10.100.104.153]
+changed: [10.100.109.31]
+changed: [10.100.116.183]
+changed: [10.100.112.55]
+changed: [10.100.104.152]
+changed: [10.100.104.64]
+changed: [10.100.112.73]
+changed: [10.100.112.36]
+changed: [10.100.112.71]
+changed: [10.100.112.156]
+changed: [10.100.104.62]
+changed: [10.100.104.47]
+changed: [10.100.104.46]
+changed: [10.100.104.199]
+changed: [10.100.104.204]
+changed: [10.100.111.106]
+changed: [10.100.109.178]
+changed: [10.100.116.45]
+changed: [10.100.112.151]
+changed: [10.100.112.133]
+changed: [10.100.104.151]
+changed: [10.100.104.74]
+changed: [10.100.112.81]
+changed: [10.100.112.180]
+changed: [10.100.104.129]
+changed: [10.100.112.149]
+changed: [10.100.102.95]
+changed: [10.100.112.147]
+changed: [10.100.104.80]
+changed: [10.100.111.219]
+changed: [10.100.112.195]
+changed: [10.100.112.236]
+changed: [10.100.109.139]
+changed: [10.100.112.61]
+changed: [10.100.112.231]
+changed: [10.100.109.116]
+changed: [10.100.112.40]
+changed: [10.100.104.188]
+changed: [10.100.111.30]
+
+TASK [Remove routes file] ******************************************************
+changed: [10.100.102.214]
+changed: [10.100.102.213]
+changed: [10.100.102.53]
+changed: [10.100.102.58]
+changed: [10.100.102.20]
+changed: [10.100.102.177]
+changed: [10.100.102.211]
+changed: [10.100.102.175]
+changed: [10.100.104.141]
+changed: [10.100.104.138]
+changed: [10.100.104.145]
+changed: [10.100.104.161]
+changed: [10.100.104.165]
+changed: [10.100.104.130]
+changed: [10.100.104.174]
+changed: [10.100.104.177]
+changed: [10.100.102.176]
+changed: [10.100.104.142]
+changed: [10.100.104.182]
+changed: [10.100.104.183]
+changed: [10.100.104.160]
+changed: [10.100.104.184]
+changed: [10.100.104.187]
+changed: [10.100.104.189]
+changed: [10.100.104.34]
+changed: [10.100.104.82]
+changed: [10.100.104.91]
+changed: [10.100.104.179]
+changed: [10.100.104.92]
+changed: [10.100.104.144]
+changed: [10.100.104.150]
+changed: [10.100.104.140]
+changed: [10.100.111.55]
+changed: [10.100.104.166]
+changed: [10.100.111.56]
+changed: [10.100.111.73]
+changed: [10.100.111.131]
+changed: [10.100.111.77]
+changed: [10.100.111.154]
+changed: [10.100.111.168]
+changed: [10.100.111.175]
+changed: [10.100.111.177]
+changed: [10.100.104.180]
+changed: [10.100.112.37]
+changed: [10.100.111.198]
+changed: [10.100.112.54]
+changed: [10.100.112.45]
+changed: [10.100.112.88]
+changed: [10.100.112.106]
+changed: [10.100.112.72]
+changed: [10.100.112.120]
+changed: [10.100.112.127]
+changed: [10.100.112.139]
+changed: [10.100.112.136]
+changed: [10.100.112.160]
+changed: [10.100.112.182]
+changed: [10.100.112.137]
+changed: [10.100.112.161]
+changed: [10.100.112.179]
+changed: [10.100.112.184]
+changed: [10.100.112.187]
+changed: [10.100.112.186]
+changed: [10.100.112.198]
+changed: [10.100.112.205]
+changed: [10.100.112.225]
+changed: [10.100.112.240]
+changed: [10.100.113.28]
+changed: [10.100.113.27]
+changed: [10.100.113.39]
+changed: [10.100.113.66]
+changed: [10.100.113.118]
+changed: [10.100.113.162]
+changed: [10.100.113.169]
+changed: [10.100.116.24]
+changed: [10.100.116.29]
+changed: [10.100.113.145]
+changed: [10.100.104.72]
+changed: [10.100.116.41]
+changed: [10.100.116.77]
+changed: [10.100.104.23]
+changed: [10.100.104.126]
+changed: [10.100.104.35]
+changed: [10.100.104.50]
+changed: [10.100.112.183]
+changed: [10.100.104.76]
+changed: [10.100.104.67]
+changed: [10.100.104.42]
+changed: [10.100.112.35]
+changed: [10.100.112.43]
+changed: [10.100.104.99]
+changed: [10.100.112.49]
+changed: [10.100.112.76]
+changed: [10.100.116.35]
+changed: [10.100.113.198]
+changed: [10.100.112.57]
+changed: [10.100.112.58]
+changed: [10.100.116.37]
+changed: [10.100.104.90]
+changed: [10.100.104.98]
+changed: [10.100.109.221]
+changed: [10.100.112.109]
+changed: [10.100.104.40]
+changed: [10.100.104.172]
+changed: [10.100.104.210]
+changed: [10.100.104.137]
+changed: [10.100.104.136]
+changed: [10.100.104.207]
+changed: [10.100.104.233]
+changed: [10.100.112.93]
+changed: [10.100.109.61]
+changed: [10.100.109.29]
+changed: [10.100.104.232]
+changed: [10.100.104.65]
+changed: [10.100.109.62]
+changed: [10.100.109.63]
+changed: [10.100.104.125]
+changed: [10.100.109.112]
+changed: [10.100.104.157]
+changed: [10.100.109.113]
+changed: [10.100.112.218]
+changed: [10.100.109.114]
+changed: [10.100.109.12]
+changed: [10.100.109.111]
+changed: [10.100.109.100]
+changed: [10.100.112.191]
+changed: [10.100.112.140]
+changed: [10.100.109.16]
+changed: [10.100.112.199]
+changed: [10.100.104.113]
+changed: [10.100.112.178]
+changed: [10.100.102.72]
+changed: [10.100.112.50]
+changed: [10.100.109.130]
+changed: [10.100.112.152]
+changed: [10.100.113.167]
+changed: [10.100.113.34]
+changed: [10.100.112.74]
+changed: [10.100.109.127]
+changed: [10.100.102.19]
+changed: [10.100.113.18]
+changed: [10.100.104.110]
+changed: [10.100.112.181]
+changed: [10.100.112.217]
+changed: [10.100.104.122]
+changed: [10.100.112.157]
+changed: [10.100.112.92]
+changed: [10.100.104.128]
+changed: [10.100.112.242]
+changed: [10.100.112.244]
+changed: [10.100.109.31]
+changed: [10.100.104.118]
+changed: [10.100.112.22]
+changed: [10.100.104.153]
+changed: [10.100.112.55]
+changed: [10.100.116.183]
+changed: [10.100.104.64]
+changed: [10.100.104.152]
+changed: [10.100.112.36]
+changed: [10.100.112.73]
+changed: [10.100.112.71]
+changed: [10.100.112.156]
+changed: [10.100.104.62]
+changed: [10.100.104.47]
+changed: [10.100.104.46]
+changed: [10.100.104.199]
+changed: [10.100.104.204]
+changed: [10.100.111.106]
+changed: [10.100.109.178]
+changed: [10.100.116.45]
+changed: [10.100.112.151]
+changed: [10.100.112.133]
+changed: [10.100.104.151]
+changed: [10.100.104.74]
+changed: [10.100.112.81]
+changed: [10.100.112.180]
+changed: [10.100.104.129]
+changed: [10.100.102.95]
+changed: [10.100.112.147]
+changed: [10.100.112.149]
+changed: [10.100.104.80]
+changed: [10.100.111.219]
+changed: [10.100.112.195]
+changed: [10.100.112.236]
+changed: [10.100.109.139]
+changed: [10.100.112.61]
+changed: [10.100.112.231]
+changed: [10.100.109.116]
+changed: [10.100.112.40]
+changed: [10.100.104.188]
+changed: [10.100.111.30]
+
+PLAY RECAP *********************************************************************
+10.10.112.128              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.150             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.151             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.175             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.176             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.177             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.19              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.20              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.211             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.213             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.214             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.53              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.58              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.60              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.72              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.95              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.110             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.113             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.118             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.122             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.124             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.125             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.126             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.128             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.129             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.130             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.131             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.132             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.133             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.134             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.136             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.137             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.138             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.139             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.140             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.141             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.142             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.144             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.145             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.150             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.151             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.152             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.153             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.154             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.157             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.159             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+10.100.104.160             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.161             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.165             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.166             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.172             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.174             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.177             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.179             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.180             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.182             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.183             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.184             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.187             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.188             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.189             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.199             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.204             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.205             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.206             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.207             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.208             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.209             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.210             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.23              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.232             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.233             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.25              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.26              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.28              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.29              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.31              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.32              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.34              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.35              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.40              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.42              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.43              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.46              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.47              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.48              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.49              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.50              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.61              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.62              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.63              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.64              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.65              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.67              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.68              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.69              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.70              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.71              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.72              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.73              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.74              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.75              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.76              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.79              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.80              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.81              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.82              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.85              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.87              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.89              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.90              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.91              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.92              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.98              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.99              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.100             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.111             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.112             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.113             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.114             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.116             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.12              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.127             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.130             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.139             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.16              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.178             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.204             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+10.100.109.221             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.29              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.31              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.36              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.37              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.57              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.61              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.62              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.63              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.65              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.66              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.67              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.72              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.73              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.106             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.131             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.142             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.154             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.162             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.168             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.171             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.175             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.177             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.190             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.197             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.198             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.219             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.30              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.43              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.55              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.56              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.73              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.77              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.79              : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+10.100.111.94              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.104             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.106             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.109             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.11              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.112             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.114             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.115             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.116             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.117             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.118             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.119             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.120             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.126             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.127             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.129             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.130             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.132             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.133             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.134             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.136             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.137             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.138             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.139             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.140             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.147             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.149             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.151             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.152             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.156             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.157             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.159             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.160             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.161             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.167             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.177             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.178             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.179             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.180             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.181             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.182             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.183             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.184             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.186             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.187             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.191             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.195             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.198             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.199             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.205             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.210             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.211             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.213             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.214             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.215             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.217             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.218             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.22              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.225             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.229             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.230             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.231             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.236             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.240             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.242             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.244             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.249             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.25              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.250             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.26              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.27              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.29              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.30              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.31              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.33              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.35              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.36              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.37              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.40              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.43              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.45              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.48              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.49              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.50              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.52              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.53              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.54              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.55              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.57              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.58              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.6               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.61              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.67              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.69              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.7               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.71              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.72              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.73              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.74              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.76              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.77              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.78              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.79              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.81              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.84              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.88              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.92              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.93              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.99              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.118             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.145             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.162             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.167             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.169             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.18              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.198             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.27              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.28              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.34              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.39              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.66              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.11              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.12              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.13              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.17              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.183             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.24              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.29              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.35              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.37              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.41              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.45              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.77              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+PLAY [Backup routes on servers] ************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.100.102.212]
+ok: [10.100.104.14]
+ok: [10.100.102.56]
+ok: [10.100.104.158]
+ok: [10.100.104.159]
+ok: [10.100.104.214]
+ok: [10.100.104.51]
+ok: [10.100.104.52]
+ok: [10.100.109.115]
+ok: [10.100.111.249]
+ok: [10.100.112.102]
+ok: [10.100.112.103]
+ok: [10.100.104.193]
+ok: [10.100.111.209]
+ok: [10.100.112.143]
+ok: [10.100.112.146]
+ok: [10.100.113.110]
+ok: [10.100.112.170]
+ok: [10.100.113.160]
+ok: [10.100.116.22]
+ok: [10.100.116.186]
+ok: [10.100.116.192]
+ok: [10.100.116.23]
+ok: [10.100.104.155]
+ok: [10.100.116.39]
+ok: [10.100.104.178]
+ok: [10.100.116.79]
+
+TASK [Backup routes] ***********************************************************
+changed: [10.100.102.212]
+changed: [10.100.104.14]
+changed: [10.100.104.155]
+changed: [10.100.104.158]
+changed: [10.100.102.56]
+changed: [10.100.104.193]
+changed: [10.100.104.178]
+changed: [10.100.104.159]
+changed: [10.100.104.51]
+changed: [10.100.104.52]
+changed: [10.100.104.214]
+changed: [10.100.109.115]
+changed: [10.100.111.249]
+changed: [10.100.111.209]
+changed: [10.100.112.102]
+changed: [10.100.112.103]
+changed: [10.100.112.170]
+changed: [10.100.113.110]
+changed: [10.100.113.160]
+changed: [10.100.112.143]
+changed: [10.100.116.186]
+changed: [10.100.116.22]
+changed: [10.100.112.146]
+changed: [10.100.116.192]
+changed: [10.100.116.23]
+changed: [10.100.116.79]
+changed: [10.100.116.39]
+
+TASK [Copy routes to Ubuntu server] ********************************************
+changed: [10.100.102.212]
+changed: [10.100.104.14]
+changed: [10.100.104.155]
+changed: [10.100.104.158]
+changed: [10.100.102.56]
+changed: [10.100.104.193]
+changed: [10.100.104.178]
+changed: [10.100.104.159]
+changed: [10.100.104.51]
+changed: [10.100.104.52]
+changed: [10.100.104.214]
+changed: [10.100.109.115]
+changed: [10.100.111.249]
+changed: [10.100.111.209]
+changed: [10.100.112.102]
+changed: [10.100.112.103]
+changed: [10.100.112.170]
+changed: [10.100.113.110]
+changed: [10.100.113.160]
+changed: [10.100.112.143]
+changed: [10.100.116.186]
+changed: [10.100.116.22]
+changed: [10.100.112.146]
+changed: [10.100.116.192]
+changed: [10.100.116.23]
+changed: [10.100.116.79]
+changed: [10.100.116.39]
+
+TASK [Remove routes file] ******************************************************
+changed: [10.100.102.212]
+changed: [10.100.104.14]
+changed: [10.100.104.155]
+changed: [10.100.102.56]
+changed: [10.100.104.158]
+changed: [10.100.104.178]
+changed: [10.100.104.193]
+changed: [10.100.104.159]
+changed: [10.100.104.51]
+changed: [10.100.104.52]
+changed: [10.100.109.115]
+changed: [10.100.104.214]
+changed: [10.100.111.249]
+changed: [10.100.111.209]
+changed: [10.100.112.102]
+changed: [10.100.112.103]
+changed: [10.100.112.170]
+changed: [10.100.113.160]
+changed: [10.100.113.110]
+changed: [10.100.112.143]
+changed: [10.100.116.186]
+changed: [10.100.116.22]
+changed: [10.100.116.192]
+changed: [10.100.112.146]
+changed: [10.100.116.23]
+changed: [10.100.116.79]
+changed: [10.100.116.39]
+
+PLAY RECAP *********************************************************************
+10.100.102.212             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.102.56              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.14              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.155             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.158             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.159             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.178             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.193             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.214             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.51              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.104.52              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.109.115             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.209             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.111.249             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.102             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.103             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.143             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.146             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.112.170             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.110             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.113.160             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.186             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.192             : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.22              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.23              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.39              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.116.79              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+PLAY [Backup routes on servers] ************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.100.114.56 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.56]
+[WARNING]: Platform linux on host 10.100.114.55 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.55]
+[WARNING]: Platform linux on host 10.100.114.60 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.60]
+[WARNING]: Platform linux on host 10.100.114.61 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.61]
+[WARNING]: Platform linux on host 10.100.114.59 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.59]
+[WARNING]: Platform linux on host 10.100.114.51 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.51]
+[WARNING]: Platform linux on host 10.100.114.54 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.54]
+[WARNING]: Platform linux on host 10.100.114.52 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.52]
+[WARNING]: Platform linux on host 10.100.114.53 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.53]
+
+TASK [Backup routes] ***********************************************************
+changed: [10.100.114.55]
+changed: [10.100.114.56]
+changed: [10.100.114.60]
+changed: [10.100.114.59]
+changed: [10.100.114.54]
+changed: [10.100.114.51]
+changed: [10.100.114.53]
+changed: [10.100.114.52]
+changed: [10.100.114.61]
+
+TASK [Copy routes to Ubuntu server] ********************************************
+changed: [10.100.114.56]
+changed: [10.100.114.55]
+changed: [10.100.114.60]
+changed: [10.100.114.59]
+changed: [10.100.114.54]
+changed: [10.100.114.51]
+changed: [10.100.114.53]
+changed: [10.100.114.52]
+changed: [10.100.114.61]
+
+TASK [Remove routes file] ******************************************************
+changed: [10.100.114.55]
+changed: [10.100.114.56]
+changed: [10.100.114.60]
+changed: [10.100.114.59]
+changed: [10.100.114.54]
+changed: [10.100.114.51]
+changed: [10.100.114.53]
+changed: [10.100.114.52]
+changed: [10.100.114.61]
+
+PLAY RECAP *********************************************************************
+10.100.114.51              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.52              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.53              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.54              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.55              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.56              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.59              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.60              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.100.114.61              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+[WARNING]: Invalid characters were found in group names but not replaced, use
+-vvvv to see details
+
+PLAY [check mount points] ******************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.100.114.55 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.55]
+[WARNING]: Platform linux on host 10.100.114.56 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.56]
+[WARNING]: Platform linux on host 10.100.114.60 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.60]
+[WARNING]: Platform linux on host 10.100.114.59 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.59]
+[WARNING]: Platform linux on host 10.100.114.54 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.54]
+[WARNING]: Platform linux on host 10.100.114.51 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.51]
+ok: [10.100.102.212]
+[WARNING]: Platform linux on host 10.100.114.53 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.53]
+[WARNING]: Platform linux on host 10.100.114.52 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.52]
+ok: [10.100.104.155]
+ok: [10.100.102.56]
+ok: [10.100.104.14]
+[WARNING]: Platform linux on host 10.100.114.61 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.114.61]
+ok: [10.100.104.193]
+ok: [10.100.104.158]
+ok: [10.100.104.178]
+ok: [10.100.104.51]
+ok: [10.100.104.214]
+ok: [10.100.104.159]
+ok: [10.100.104.52]
+ok: [10.100.109.115]
+ok: [10.100.111.249]
+ok: [10.100.111.209]
+ok: [10.100.112.103]
+ok: [10.100.112.102]
+ok: [10.100.112.143]
+ok: [10.100.112.146]
+ok: [10.100.113.110]
+ok: [10.100.113.160]
+ok: [10.100.112.170]
+ok: [10.100.116.22]
+ok: [10.100.116.192]
+ok: [10.100.116.23]
+ok: [10.100.116.186]
+ok: [10.100.116.79]
+ok: [10.100.102.214]
+ok: [10.100.116.39]
+ok: [10.100.102.213]
+ok: [10.100.102.20]
+ok: [10.100.102.53]
+ok: [10.100.102.58]
+ok: [10.100.102.177]
+ok: [10.100.102.175]
+ok: [10.100.102.211]
+[WARNING]: Platform linux on host 10.100.109.204 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change this. See https://docs.ansible.com/ansible/2.9/referen
+ce_appendices/interpreter_discovery.html for more information.
+ok: [10.100.109.204]
+ok: [10.100.104.141]
+ok: [10.100.104.138]
+ok: [10.100.104.145]
+fatal: [10.100.104.124]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.124 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.130]
+ok: [10.100.104.161]
+ok: [10.100.102.176]
+fatal: [10.100.102.151]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.102.151 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.142]
+ok: [10.100.104.165]
+ok: [10.100.104.160]
+fatal: [10.100.102.150]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.102.150 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.177]
+ok: [10.100.104.183]
+ok: [10.100.104.182]
+ok: [10.100.104.184]
+ok: [10.100.104.174]
+ok: [10.100.104.189]
+fatal: [10.100.104.43]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.104.43 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.104.187]
+ok: [10.100.104.179]
+ok: [10.100.104.82]
+fatal: [10.100.104.75]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.75 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.91]
+ok: [10.100.104.92]
+ok: [10.100.104.144]
+ok: [10.100.104.150]
+ok: [10.100.104.140]
+ok: [10.100.104.72]
+fatal: [10.100.111.43]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.111.43 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.111.55]
+ok: [10.100.104.166]
+ok: [10.100.111.73]
+ok: [10.100.111.56]
+ok: [10.100.111.79]
+fatal: [10.100.111.94]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.111.94 port 22: Connection refused", "unreachable": true}
+ok: [10.100.111.131]
+ok: [10.100.104.180]
+ok: [10.100.104.99]
+ok: [10.100.111.154]
+fatal: [10.100.111.142]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.111.142 port 22: No route to host", "unreachable": true}
+ok: [10.100.111.175]
+ok: [10.100.111.177]
+fatal: [10.100.111.190]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902430.8021173-241026587650990 `\" && echo ansible-tmp-1685902430.8021173-241026587650990=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902430.8021173-241026587650990 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.111.197]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902431.5004-150428472540074 `\" && echo ansible-tmp-1685902431.5004-150428472540074=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902431.5004-150428472540074 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.6]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.6 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1", "unreachable": true}
+fatal: [10.100.112.11]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.11 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+fatal: [10.100.112.7]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.7 port 22: no matching key exchange method found. Their offer: diffie-hellman-group14-sha1", "unreachable": true}
+ok: [10.100.112.37]
+ok: [10.100.112.54]
+ok: [10.100.112.45]
+ok: [10.100.111.198]
+ok: [10.100.104.34]
+ok: [10.100.112.88]
+ok: [10.100.112.72]
+ok: [10.100.112.106]
+ok: [10.100.111.168]
+fatal: [10.100.112.132]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Unable to negotiate with 10.100.112.132 port 22: no matching key exchange method found. Their offer: diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1", "unreachable": true}
+ok: [10.100.112.120]
+ok: [10.100.112.127]
+ok: [10.100.112.139]
+ok: [10.100.112.136]
+fatal: [10.100.112.134]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902441.9922667-5763171659723 `\" && echo ansible-tmp-1685902441.9922667-5763171659723=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902441.9922667-5763171659723 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.160]
+ok: [10.100.112.137]
+ok: [10.100.112.182]
+ok: [10.100.112.161]
+fatal: [10.100.112.167]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902442.8823802-247106979503965 `\" && echo ansible-tmp-1685902442.8823802-247106979503965=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902442.8823802-247106979503965 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.179]
+fatal: [10.100.112.69]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.69 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.187]
+ok: [10.100.112.184]
+ok: [10.100.112.186]
+ok: [10.100.112.198]
+ok: [10.100.112.205]
+ok: [10.100.112.225]
+ok: [10.100.113.28]
+ok: [10.100.112.240]
+ok: [10.100.113.39]
+[WARNING]: Distribution centos 7.6.1810 on host 10.100.113.27 should use
+/usr/bin/python, but is using /usr/bin/python3.6, since the discovered platform
+python interpreter was not present. See https://docs.ansible.com/ansible/2.9/re
+ference_appendices/interpreter_discovery.html for more information.
+ok: [10.100.113.27]
+ok: [10.100.113.66]
+ok: [10.100.113.118]
+fatal: [10.100.112.177]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.177 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.183]
+ok: [10.100.113.169]
+ok: [10.100.116.24]
+ok: [10.100.113.162]
+ok: [10.100.116.29]
+ok: [10.100.116.41]
+ok: [10.100.116.77]
+ok: [10.100.104.126]
+ok: [10.100.104.23]
+ok: [10.100.113.145]
+ok: [10.100.111.77]
+fatal: [10.100.104.131]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.131 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.132]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.132 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.25]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.25 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.26]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.26 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.35]
+fatal: [10.100.104.28]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.28 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.29]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.29 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.31]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.31 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.32]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.32 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.50]
+fatal: [10.100.104.48]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.48 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.67]
+fatal: [10.100.104.49]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.49 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.76]
+fatal: [10.100.104.68]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.68 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.42]
+fatal: [10.100.104.69]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.69 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.35]
+ok: [10.100.112.43]
+ok: [10.100.112.49]
+fatal: [10.100.104.70]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.70 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.57]
+ok: [10.100.112.76]
+ok: [10.100.112.58]
+fatal: [10.100.104.71]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.71 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.48]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.48 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.113.198]
+fatal: [10.100.112.67]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.67 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.116.35]
+ok: [10.100.116.37]
+fatal: [10.100.112.129]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902502.178234-223478938823918 `\" && echo ansible-tmp-1685902502.178234-223478938823918=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902502.178234-223478938823918 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.30]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.30 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.215]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.215 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.130]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902502.977863-202734982728224 `\" && echo ansible-tmp-1685902502.977863-202734982728224=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902502.977863-202734982728224 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.33]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.33 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.104.61]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.005229-17052921161211 `\" && echo ansible-tmp-1685902503.005229-17052921161211=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.005229-17052921161211 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.73]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.6186986-57304801513359 `\" && echo ansible-tmp-1685902503.6186986-57304801513359=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.6186986-57304801513359 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.63]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.6107373-174698775347066 `\" && echo ansible-tmp-1685902503.6107373-174698775347066=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.6107373-174698775347066 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.85]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8279624-56817671157278 `\" && echo ansible-tmp-1685902503.8279624-56817671157278=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8279624-56817671157278 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.87]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8405054-110518322173452 `\" && echo ansible-tmp-1685902503.8405054-110518322173452=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8405054-110518322173452 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.81]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8200998-140569009873621 `\" && echo ansible-tmp-1685902503.8200998-140569009873621=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902503.8200998-140569009873621 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.205]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902504.9090364-211495391498105 `\" && echo ansible-tmp-1685902504.9090364-211495391498105=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902504.9090364-211495391498105 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.139]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902504.8552148-139493410311772 `\" && echo ansible-tmp-1685902504.8552148-139493410311772=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902504.8552148-139493410311772 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.90]
+fatal: [10.100.104.206]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902505.8996162-187732956417645 `\" && echo ansible-tmp-1685902505.8996162-187732956417645=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902505.8996162-187732956417645 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.98]
+fatal: [10.100.104.89]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.112.31]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902506.8068244-159050997176032 `\" && echo ansible-tmp-1685902506.8068244-159050997176032=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902506.8068244-159050997176032 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.109.221]
+fatal: [10.100.112.126]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.0857756-240323465489332 `\" && echo ansible-tmp-1685902508.0857756-240323465489332=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.0857756-240323465489332 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.109]
+fatal: [10.100.112.29]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.7111473-3130388577706 `\" && echo ansible-tmp-1685902508.7111473-3130388577706=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.7111473-3130388577706 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.111.162]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.3912542-105243520361860 `\" && echo ansible-tmp-1685902508.3912542-105243520361860=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902508.3912542-105243520361860 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.112]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902509.4197595-136264502617515 `\" && echo ansible-tmp-1685902509.4197595-136264502617515=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902509.4197595-136264502617515 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.172]
+ok: [10.100.104.210]
+ok: [10.100.104.207]
+ok: [10.100.104.136]
+ok: [10.100.104.137]
+fatal: [10.100.112.159]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.233]
+ok: [10.100.109.61]
+fatal: [10.100.116.11]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.112.93]
+fatal: [10.100.112.214]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.214 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.116.17]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.109.29]
+ok: [10.100.104.65]
+fatal: [10.100.116.13]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.232]
+ok: [10.100.109.62]
+fatal: [10.100.116.12]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.109.63]
+ok: [10.100.104.157]
+ok: [10.100.104.125]
+fatal: [10.100.112.213]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.213 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.115]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.115 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.116]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.116 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.77]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.77 port 22: Connection refused", "unreachable": true}
+fatal: [10.100.112.114]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.114 port 22: Connection refused", "unreachable": true}
+ok: [10.100.104.40]
+ok: [10.100.104.118]
+fatal: [10.100.112.27]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.27 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.79]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.79 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.112]
+ok: [10.100.104.153]
+ok: [10.100.109.113]
+ok: [10.100.112.218]
+ok: [10.100.109.114]
+fatal: [10.100.112.26]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.26 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.109.67]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: ", "unreachable": true}
+fatal: [10.100.112.210]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.210 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.211]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Connection timed out during banner exchange", "unreachable": true}
+fatal: [10.100.112.249]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.249 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.250]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.250 port 2525: Connection timed out", "unreachable": true}
+fatal: [10.100.112.78]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.78 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.12]
+fatal: [10.100.112.25]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.25 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.109.111]
+fatal: [10.100.109.66]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: W A R N I N G W A R N I N G W A R N I N G W A R N I N G \nThis is a private computer system. Unauthorized access or use \nis prohibited and subject to prosecution and/or disciplinary \naction. All use of this system constitutes consent to \nmonitoring at all times and users are not entitled to any \nexpectation of privacy. If monitoring reveals possible evidence\nof violation of criminal statutes, this evidence and any other \nrelated information, including identification information about \nthe user, may be provided to law enforcement officials.\nIf monitoring reveals violations of security regulations or\nunauthorized use, employees who violate security regulations or\nmake unauthorized use of this system are subject to appropriate \ndisciplinary action.\nW A R N I N G W A R N I N G W A R N I N G W A R N I N G", "unreachable": true}
+fatal: [10.100.112.117]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.117 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.112.191]
+ok: [10.100.109.100]
+ok: [10.100.112.140]
+ok: [10.100.112.199]
+ok: [10.100.109.16]
+fatal: [10.100.112.118]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.118 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.104.113]
+ok: [10.100.102.72]
+fatal: [10.100.112.119]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.112.119 port 2525: Connection timed out", "unreachable": true}
+ok: [10.100.112.50]
+ok: [10.100.112.178]
+ok: [10.100.112.152]
+ok: [10.100.109.130]
+ok: [10.100.113.167]
+ok: [10.100.112.74]
+ok: [10.100.113.34]
+ok: [10.100.113.18]
+ok: [10.100.109.127]
+ok: [10.100.112.217]
+ok: [10.100.112.181]
+ok: [10.100.104.110]
+fatal: [10.100.112.84]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Authorized uses only. All activity may be monitored and reported.\nPermission denied, please try again.", "unreachable": true}
+fatal: [10.100.109.72]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.109.73]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.102.60]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.112.157]
+ok: [10.100.104.122]
+fatal: [10.100.104.133]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902567.7898414-130730421850073 `\" && echo ansible-tmp-1685902567.7898414-130730421850073=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902567.7898414-130730421850073 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.92]
+fatal: [10.100.104.208]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.208 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.104.128]
+ok: [10.100.112.242]
+fatal: [10.100.104.209]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.104.209 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.244]
+ok: [10.100.112.22]
+ok: [10.100.109.31]
+ok: [10.100.112.55]
+ok: [10.100.116.183]
+fatal: [10.100.104.79]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: ", "unreachable": true}
+fatal: [10.100.109.57]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685902585.3377721-231521718290322 `\" && echo ansible-tmp-1685902585.3377721-231521718290322=\"` echo ~/.ansible/tmp/ansible-tmp-1685902585.3377721-231521718290322 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.204]
+ok: [10.100.104.64]
+ok: [10.100.104.152]
+fatal: [10.100.109.65]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.112.36]
+ok: [10.100.112.73]
+ok: [10.100.102.19]
+ok: [10.100.111.106]
+ok: [10.100.112.156]
+fatal: [10.100.104.154]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: kex_exchange_identification: read: Connection reset by peer", "unreachable": true}
+ok: [10.100.112.71]
+ok: [10.100.104.62]
+ok: [10.100.104.47]
+ok: [10.100.104.46]
+fatal: [10.100.112.229]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+ok: [10.100.104.199]
+fatal: [10.100.112.230]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902598.116777-239505910618499 `\" && echo ansible-tmp-1685902598.116777-239505910618499=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902598.116777-239505910618499 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.104.129]
+fatal: [10.100.112.138]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902600.3987467-61273796601700 `\" && echo ansible-tmp-1685902600.3987467-61273796601700=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902600.3987467-61273796601700 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.109.178]
+ok: [10.100.116.45]
+ok: [10.100.112.151]
+ok: [10.100.104.151]
+ok: [10.100.112.40]
+fatal: [10.10.112.128]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.10.112.128 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.112.52]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Permission denied, please try again.", "unreachable": true}
+fatal: [10.100.112.104]: UNREACHABLE! => {"changed": false, "msg": "mkdir: cannot create directory ‘/home/dchyd/.ansible’: No space left on device\n", "unreachable": true}
+ok: [10.100.112.133]
+ok: [10.100.112.180]
+ok: [10.100.104.74]
+ok: [10.100.112.81]
+ok: [10.100.112.147]
+fatal: [10.100.112.53]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902618.5281827-134442029959959 `\" && echo ansible-tmp-1685902618.5281827-134442029959959=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902618.5281827-134442029959959 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.112.99]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685902618.809628-173879745828322 `\" && echo ansible-tmp-1685902618.809628-173879745828322=\"` echo ~/.ansible/tmp/ansible-tmp-1685902618.809628-173879745828322 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.111.171]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902617.7901227-48441602460663 `\" && echo ansible-tmp-1685902617.7901227-48441602460663=\"` echo /home/dchyd/.ansible/tmp/ansible-tmp-1685902617.7901227-48441602460663 `\" ), exited with result 1", "unreachable": true}
+fatal: [10.100.104.134]: UNREACHABLE! => {"changed": false, "msg": "Authentication or permission failure. In some cases, you may have been able to authenticate and did not have permissions on the target directory. Consider changing the remote tmp path in ansible.cfg to a path rooted in \"/tmp\". Failed command was: ( umask 77 && mkdir -p \"` echo ~/.ansible/tmp/ansible-tmp-1685902619.3201065-100374238717991 `\" && echo ansible-tmp-1685902619.3201065-100374238717991=\"` echo ~/.ansible/tmp/ansible-tmp-1685902619.3201065-100374238717991 `\" ), exited with result 1", "unreachable": true}
+ok: [10.100.112.149]
+ok: [10.100.102.95]
+ok: [10.100.104.80]
+ok: [10.100.111.219]
+ok: [10.100.112.195]
+ok: [10.100.112.236]
+fatal: [10.100.109.37]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.109.37 port 22: Connection timed out", "unreachable": true}
+fatal: [10.100.109.36]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.100.109.36 port 22: Connection timed out", "unreachable": true}
+ok: [10.100.112.61]
+ok: [10.100.112.231]
+ok: [10.100.109.116]
+ok: [10.100.109.139]
+ok: [10.100.111.30]
+ok: [10.100.104.188]
+
+TASK [df-h_backup] *************************************************************
+changed: [10.100.114.55]
+changed: [10.100.114.56]
+changed: [10.100.114.60]
+changed: [10.100.114.61]
+changed: [10.100.114.59]
+changed: [10.100.114.54]
+changed: [10.100.102.212]
+changed: [10.100.114.51]
+changed: [10.100.114.52]
+changed: [10.100.104.14]
+changed: [10.100.102.56]
+changed: [10.100.104.158]
+changed: [10.100.104.159]
+changed: [10.100.114.53]
+changed: [10.100.104.214]
+changed: [10.100.104.51]
+changed: [10.100.104.52]
+changed: [10.100.109.115]
+changed: [10.100.111.249]
+changed: [10.100.112.102]
+changed: [10.100.112.103]
+changed: [10.100.112.143]
+changed: [10.100.112.146]
+changed: [10.100.112.170]
+changed: [10.100.111.209]
+changed: [10.100.113.160]
+changed: [10.100.113.110]
+changed: [10.100.116.192]
+changed: [10.100.116.186]
+changed: [10.100.116.22]
+changed: [10.100.104.193]
+changed: [10.100.116.23]
+changed: [10.100.109.204]
+changed: [10.100.116.39]
+changed: [10.100.102.214]
+changed: [10.100.102.213]
+changed: [10.100.102.20]
+changed: [10.100.102.58]
+fatal: [10.100.102.53]: FAILED! => {"changed": true, "cmd": "/bin/df -hT > /tmp/10.100.102.53_df-h_2023-06-04.txt", "delta": "0:00:00.007272", "end": "2023-06-04 23:48:16.908201", "msg": "non-zero return code", "rc": 1, "start": "2023-06-04 23:48:16.900929", "stderr": "/bin/df: write error: No space left on device", "stderr_lines": ["/bin/df: write error: No space left on device"], "stdout": "", "stdout_lines": []}
+changed: [10.100.102.177]
+changed: [10.100.102.175]
+changed: [10.100.102.211]
+changed: [10.100.104.178]
+changed: [10.100.104.141]
+changed: [10.100.104.155]
+changed: [10.100.104.138]
+changed: [10.100.104.145]
+changed: [10.100.104.130]
+changed: [10.100.104.161]
+changed: [10.100.104.165]
+changed: [10.100.116.79]
+changed: [10.100.102.176]
+changed: [10.100.104.174]
+changed: [10.100.104.177]
+changed: [10.100.104.182]
+changed: [10.100.104.142]
+changed: [10.100.104.183]
+changed: [10.100.104.184]
+changed: [10.100.104.187]
+changed: [10.100.104.189]
+changed: [10.100.104.160]
+changed: [10.100.104.34]
+changed: [10.100.104.82]
+changed: [10.100.104.91]
+changed: [10.100.104.92]
+changed: [10.100.104.144]
+changed: [10.100.104.150]
+changed: [10.100.104.140]
+changed: [10.100.104.166]
+fatal: [10.100.104.179]: FAILED! => {"changed": true, "cmd": "/bin/df -hT > /tmp/10.100.104.179_df-h_2023-06-04.txt", "delta": "0:00:00.011365", "end": "2023-06-04 23:47:20.599549", "msg": "non-zero return code", "rc": 1, "start": "2023-06-04 23:47:20.588184", "stderr": "/bin/df: `/mqbackup': Stale file handle", "stderr_lines": ["/bin/df: `/mqbackup': Stale file handle"], "stdout": "", "stdout_lines": []}
+changed: [10.100.111.56]
+changed: [10.100.111.73]
+changed: [10.100.111.77]
+changed: [10.100.111.79]
+changed: [10.100.111.131]
+changed: [10.100.104.180]
+changed: [10.100.111.55]
+changed: [10.100.111.154]
+changed: [10.100.111.175]
+changed: [10.100.111.168]
+changed: [10.100.111.177]
+changed: [10.100.112.37]
+changed: [10.100.112.54]
+changed: [10.100.112.45]
+changed: [10.100.112.88]
+changed: [10.100.112.72]
+changed: [10.100.112.106]
+changed: [10.100.112.120]
+changed: [10.100.112.127]
+changed: [10.100.112.139]
+changed: [10.100.112.136]
+changed: [10.100.112.137]
+changed: [10.100.112.160]
+changed: [10.100.112.182]
+changed: [10.100.112.161]
+changed: [10.100.111.198]
+changed: [10.100.112.179]
+changed: [10.100.112.187]
+changed: [10.100.112.184]
+changed: [10.100.112.186]
+changed: [10.100.112.198]
+changed: [10.100.112.205]
+changed: [10.100.112.225]
+changed: [10.100.113.28]
+changed: [10.100.112.240]
+changed: [10.100.104.72]
+changed: [10.100.113.66]
+changed: [10.100.113.39]
+changed: [10.100.113.27]
+changed: [10.100.113.162]
+changed: [10.100.113.118]
+changed: [10.100.116.24]
+changed: [10.100.113.169]
+changed: [10.100.116.29]
+changed: [10.100.104.99]
+changed: [10.100.116.41]
+changed: [10.100.116.77]
+changed: [10.100.104.126]
+changed: [10.100.104.23]
+changed: [10.100.104.35]
+changed: [10.100.113.145]
+changed: [10.100.104.50]
+changed: [10.100.104.76]
+changed: [10.100.104.67]
+changed: [10.100.104.42]
+changed: [10.100.112.35]
+changed: [10.100.112.43]
+changed: [10.100.112.49]
+changed: [10.100.112.76]
+changed: [10.100.113.198]
+changed: [10.100.112.57]
+changed: [10.100.116.35]
+changed: [10.100.112.58]
+changed: [10.100.112.183]
+changed: [10.100.116.37]
+changed: [10.100.104.90]
+changed: [10.100.104.98]
+changed: [10.100.109.221]
+changed: [10.100.112.109]
+changed: [10.100.104.40]
+changed: [10.100.104.172]
+changed: [10.100.104.210]
+changed: [10.100.104.207]
+changed: [10.100.104.137]
+changed: [10.100.104.233]
+changed: [10.100.104.136]
+changed: [10.100.112.93]
+changed: [10.100.109.61]
+fatal: [10.100.109.29]: FAILED! => {"changed": true, "cmd": "/bin/df -hT > /tmp/10.100.109.29_df-h_2023-06-04.txt", "delta": "0:00:00.010650", "end": "2023-06-04 23:49:15.679615", "msg": "non-zero return code", "rc": 1, "start": "2023-06-04 23:49:15.668965", "stderr": "/bin/df: /mqbackup: Stale file handle", "stderr_lines": ["/bin/df: /mqbackup: Stale file handle"], "stdout": "", "stdout_lines": []}
+changed: [10.100.104.232]
+changed: [10.100.104.65]
+changed: [10.100.109.63]
+changed: [10.100.109.62]
+changed: [10.100.104.125]
+changed: [10.100.104.157]
+changed: [10.100.109.112]
+changed: [10.100.109.113]
+changed: [10.100.109.114]
+changed: [10.100.112.218]
+changed: [10.100.109.12]
+changed: [10.100.109.111]
+changed: [10.100.109.100]
+changed: [10.100.112.191]
+changed: [10.100.112.140]
+changed: [10.100.112.199]
+changed: [10.100.109.16]
+changed: [10.100.104.113]
+changed: [10.100.102.72]
+changed: [10.100.112.50]
+changed: [10.100.112.178]
+changed: [10.100.109.130]
+changed: [10.100.112.152]
+changed: [10.100.113.167]
+changed: [10.100.112.74]
+changed: [10.100.113.34]
+changed: [10.100.109.127]
+changed: [10.100.113.18]
+changed: [10.100.112.217]
+fatal: [10.100.112.181]: UNREACHABLE! => {"changed": false, "msg": "Invalid/incorrect password: Authorized uses only. All activity may be monitored and reported.\nPermission denied, please try again.", "unreachable": true}
+changed: [10.100.104.110]
+changed: [10.100.112.157]
+changed: [10.100.104.122]
+changed: [10.100.112.92]
+fatal: [10.100.104.128]: FAILED! => {"changed": true, "cmd": "/bin/df -hT > /tmp/10.100.104.128_df-h_2023-06-04.txt", "delta": "0:00:00.017668", "end": "2023-06-04 22:40:26.475785", "msg": "non-zero return code", "rc": 1, "start": "2023-06-04 22:40:26.458117", "stderr": "/bin/df: `/mqdata': Stale file handle", "stderr_lines": ["/bin/df: `/mqdata': Stale file handle"], "stdout": "", "stdout_lines": []}
+changed: [10.100.104.118]
+fatal: [10.100.104.153]: FAILED! => {"changed": true, "cmd": "/bin/df -hT > /tmp/10.100.104.153_df-h_2023-06-04.txt", "delta": "0:00:00.004371", "end": "2023-06-04 23:34:12.069595", "msg": "non-zero return code", "rc": 1, "start": "2023-06-04 23:34:12.065224", "stderr": "/bin/df: `/home/webdev/.gvfs': Permission denied", "stderr_lines": ["/bin/df: `/home/webdev/.gvfs': Permission denied"], "stdout": "", "stdout_lines": []}
+changed: [10.100.112.242]
+changed: [10.100.112.244]
+changed: [10.100.109.31]
+changed: [10.100.112.22]
+changed: [10.100.112.55]
+changed: [10.100.116.183]
+changed: [10.100.104.64]
+changed: [10.100.104.152]
+changed: [10.100.112.36]
+changed: [10.100.112.73]
+changed: [10.100.112.71]
+changed: [10.100.104.204]
+changed: [10.100.112.156]
+changed: [10.100.104.62]
+changed: [10.100.104.47]
+changed: [10.100.104.46]
+changed: [10.100.111.106]
+changed: [10.100.104.199]
+changed: [10.100.104.129]
+changed: [10.100.104.151]
+changed: [10.100.109.178]
+changed: [10.100.116.45]
+changed: [10.100.112.151]
+changed: [10.100.112.133]
+changed: [10.100.104.74]
+changed: [10.100.112.81]
+changed: [10.100.112.180]
+changed: [10.100.112.147]
+changed: [10.100.102.95]
+changed: [10.100.112.149]
+changed: [10.100.104.80]
+changed: [10.100.111.219]
+changed: [10.100.112.195]
+changed: [10.100.112.236]
+changed: [10.100.109.139]
+changed: [10.100.112.61]
+changed: [10.100.112.40]
+changed: [10.100.112.231]
+changed: [10.100.109.116]
+changed: [10.100.104.188]
+changed: [10.100.111.30]
