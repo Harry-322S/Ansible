@@ -1,0 +1,10 @@
+---
+- name: Run sudo command to restart NTP
+  hosts: test
+  become: true
+  become_method: sudo
+  vars:
+    ansible_become_password: test123
+  tasks:
+    - name: Restart NTP service
+      command: systemctl restart ntp
